@@ -1,5 +1,11 @@
-extends layout
-
-block content
-  h1= title
-  p Welcome to #{title}
+doctype html
+html(lang="en")
+  include common/header.pug
+  +head("Three.js Prac")
+  body
+    header 
+      div#container
+    script(src="https://cdn.jsdelivr.net/gh/tweenjs/tween.js@v16.7.1/src/Tween.js")
+    script
+      include ../public/javascripts/bundle.js
+    

@@ -3,18 +3,27 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "if [[ $NODE_ENV == 'production' ]]; then node ./bin/www; else nodemon ./bin/www; fi"
+    "start": "if [[ $NODE_ENV == 'production' ]]; then node ./bin/www; else nodemon ./bin/www; fi",
+    "build": "webpack"
   },
   "dependencies": {
+    "@babel/polyfill": "^7.6.0",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
+    "lodash": "^4.17.15",
     "morgan": "~1.9.1",
+    "path": "^0.12.7",
     "pug": "^2.0.4",
     "three": "^0.108.0"
   },
   "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "lodash-webpack-plugin": "^0.11.5",
+    "nodemon": "^1.19.2",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8"
   }
