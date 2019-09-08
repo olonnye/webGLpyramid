@@ -5,7 +5,12 @@ html(lang="en")
   body
     header 
       div#container
+        div#info-icon
+        div#info
+    script(src="https://cdn.jsdelivr.net/gh/mrdoob/three.js@r89/examples/js/Detector.js")
     script(src="https://cdn.jsdelivr.net/gh/tweenjs/tween.js@v16.7.1/src/Tween.js")
+    script  
+      include ../dist/info.js
     script
       include ../public/javascripts/bundle.js
     
