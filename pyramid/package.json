@@ -16,7 +16,7 @@
     "morgan": "~1.9.1",
     "path": "^0.12.7",
     "pug": "^2.0.4",
-    "three": "^0.108.0",
+    "three": "^0.125.0",
     "three-orbit-controls": "^82.1.0"
   },
   "devDependencies": {
